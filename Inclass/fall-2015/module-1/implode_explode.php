@@ -12,3 +12,5 @@ $newData = array('coffee', 'juice', 'yerba mate'); //implode joins array with ".
 echo implode('.___.', $newData) . PHP_EOL;
 
 ?>
+
+Check out www.PHP-fig.org for styling
