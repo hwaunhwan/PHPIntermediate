@@ -36,15 +36,18 @@ function pre($data, $name = null)
 { // making the second argument optional
 
     if (!empty($name)) {
-        if (php_sapi_name == cli) {
-            echo '\n';
-            echo '------------------------';
+        if (php_sapi_name() == 'cli') {
+            echo "\n";
+            echo "------------------------\n";
+            echo $name."\n";
+            echo "------------------------\n";
         } else {
             echo "<h1>$name</h1>";
         }
     }
 
     if (is_object($data) || is_array($data)) {
+
         echo "<pre>";
         print_r($data);
         echo "</pre>";
