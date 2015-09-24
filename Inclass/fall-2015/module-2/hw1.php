@@ -57,17 +57,21 @@ foreach ($wordArray as $i => $key) {
 
 echo "<br/>";
 
-
 foreach ($wordArray as $i => $key) {
+    /** mixed @var  $firstdigit Value of the first character of $key array */
     $firstdigit = $key[0];
+
     if ($key == 'false' | $key == 'true') {
         $countArray ['num_bool'] += 1;
-    } elseif (is_numeric($firstdigit)) {
+    } elseif (is_numeric($firstdigit)) { //if the first character of of string is a number, count it as a number
         $countArray ['num_numeric'] += 1;
-    } elseif ($key != '–') {
+    } elseif ($key != '–') { // Not counting '-'
         $countArray ['num_string'] += 1;
     }
 }
+
+echo "<h3>Numbers, Strings and Booleans Counts</h3>";
+
 echo $countArray ['num_numeric'] . "<br/>";
 echo $countArray ['num_string'] . "<br/>";
 echo $countArray ['num_bool'] . "<br/>";
