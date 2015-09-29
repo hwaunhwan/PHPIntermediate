@@ -1,0 +1,6 @@
+<?php
+
+$boolVal = "true";
+
+?>
+&diams;
