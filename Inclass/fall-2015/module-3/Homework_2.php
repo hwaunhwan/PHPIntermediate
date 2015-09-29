@@ -48,9 +48,9 @@ function deal($players, $numCards, &$shuffledDeck)
     $pHands = array();
     foreach($players as $player){
         $pCards = array();
-        foreach($shuffledDeck as $key => $card){
+        foreach($shuffledDeck as $k => $card){
             $pCards[] = $card;
-            unset($shuffledDeck[$key]);
+            unset($shuffledDeck[$k]);
             if(count($pCards) == $numCards){
                 break;
             }
