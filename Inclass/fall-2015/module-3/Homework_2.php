@@ -2,8 +2,6 @@
 <?php
 
 
-
-
 function getDeck()
 {
     $shapes = array('D' => '&diams;', 'H' => '&hearts;', 'S' => '&spades;', 'C' => '&clubs;');
