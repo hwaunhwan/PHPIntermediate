@@ -7,6 +7,7 @@ function getDeck()
     $shapes = array('D' => '&diams;', 'H' => '&hearts;', 'S' => '&spades;', 'C' => '&clubs;');
     $cards = array_merge(array('A'), range(2, 10), array('J', 'Q', 'K'));
     $deck = array();
+
     foreach ($shapes as $shape => $shapecolor) { //two different colors
         foreach ($cards as $card) {
             if ($shape == 'D' || $shape == 'H') {
