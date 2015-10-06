@@ -53,6 +53,29 @@ class Player
         return $return;
     }
 
+    public function addUp()
+    {
+        $score = 0;
+        foreach($this->Cards as $Card){
+            print_r($Card);
+//            print_r ($Card)  ;
+//            if ($Card == 'K' ||
+//                $Card == 'Q' ||
+//                $Card == 'J' ||
+//                $Card == 'A')
+//
+            {
+                $Card = 11;
+            }
+
+          //  $score = $score + $Card;
+        }
+        //return $score;
+
+
+    }
+
+
     public function getName()
     {
         return $this->name;
