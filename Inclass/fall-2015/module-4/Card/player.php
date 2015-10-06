@@ -29,7 +29,7 @@ class Player
 
     /**
      * Give this player a card
-     * @param Deck $card
+     * @param $card[]
      */
     public function giveCard (Card $card)
     {
@@ -47,33 +47,32 @@ class Player
                 $return .= 'Player has no cards';
             } else {
                 foreach($this->Cards as $Card){
-                    $return .= $Card->render();
+                    $return .= $Card->render(); //render from card.php
                 }
             }
         return $return;
     }
 
-    public function addUp()
-    {
-        $score = 0;
-        foreach($this->Cards as $Card){
-            print_r($Card);
+//    public function addUp()
+//    {
+//        $score = 0;
+//        foreach($this->Cards as $Card){
 //            print_r ($Card)  ;
-//            if ($Card == 'K' ||
-//                $Card == 'Q' ||
-//                $Card == 'J' ||
-//                $Card == 'A')
+//            if ($Card->rank == 'K' ||
+//                $Card->rank == 'Q' ||
+//                $Card->rank == 'J' ||
+//                $Card->rank == 'A')
 //
-            {
-                $Card = 11;
-            }
-
-          //  $score = $score + $Card;
-        }
-        //return $score;
-
-
-    }
+//            {
+//                $Card->rank = 11;
+//            }
+//
+//            $score = $score + $Card->rank;
+//        }
+//        return $score;
+//
+//
+//    }
 
 
     public function getName()
