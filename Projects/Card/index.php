@@ -37,11 +37,12 @@
             <input type="text" name="name" value="Enter your first name" onclick="this.value=''">
 
             <input type="submit" name="submit" value="Enter!"><br><br>
+<!--            -->
             <?php
-            if (isset($_POST['submit'])) {
-                echo '<input type="submit" name="Re-Do" value="Re-Do">';
-            }
-            ?>
+//            if (isset($_POST['submit'])) {
+//                echo '<input type="submit" name="Re-Do" value="Re-Do">';
+//            }
+//            ?>
 
         </form>
         <?php
