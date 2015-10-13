@@ -34,6 +34,7 @@ class Player
     public function giveCard(Card $card)
     {
         $this->Cards[] = $card;
+
     }
 
     /**
@@ -55,23 +56,19 @@ class Player
 
 //    public function addUp()
 //    {
-//        $score = 0;
+//        $score=0;
 //        foreach($this->Cards as $Card){
-//            print_r ($Card)  ;
-//            if ($Card->rank == 'K' ||
-//                $Card->rank == 'Q' ||
-//                $Card->rank == 'J' ||
-//                $Card->rank == 'A')
-//
-//            {
-//                $Card->rank = 11;
-//            }
+//            if ($Card->getRank() == 'K' ||
+//                $Card->getRank() == 'Q' ||
+//                $Card->getRank() == 'J' ||
+//                $Card->getRank() == 'A')
+//                {
+//                $Card->getRank() = 11;
+//                }
 //
 //            $score = $score + $Card->rank;
 //        }
 //        return $score;
-//
-//
 //    }
 
 

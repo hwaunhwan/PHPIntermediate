@@ -270,6 +270,7 @@
 
     <p>Thanks for playing!</p>
 
+
 </footer>
 
 <?php

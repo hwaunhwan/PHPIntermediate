@@ -36,6 +36,14 @@ class Card
      * @var string
      */
     protected $rank;
+
+    /**
+     * @return string
+     */
+    public function getRank()
+    {
+        return $this->rank;
+    }
     /**
      * Red or black
      * @var string
